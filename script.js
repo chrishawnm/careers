@@ -18,7 +18,7 @@ async function fetchTitles(personId) {
 }
 
 
-async function fetchPaths(start-title) {
+async function fetchPaths(startTitle) {
     const apiUrl = `https://chrishawnmiles.pythonanywhere.com/paths/${start_title}`;
 
     try {
@@ -45,5 +45,5 @@ document.getElementById("fetch-btn0").addEventListener("click", () => {
 // Event listener for a button click
 document.getElementById("fetch-btn1").addEventListener("click", () => {
     const personId = document.getElementById("path-id").value;
-    fetchPaths(start-title);
+    fetchPaths(startTitle);
 });
