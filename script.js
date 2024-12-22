@@ -41,6 +41,7 @@ async function fetchPaths(startTitle) {
 document.getElementById("fetch-btn0").addEventListener("click", () => {
     const personId = document.getElementById("person-id").value;
     fetchTitles(personId);
+});
 
 // Event listener for a button click
 document.getElementById("fetch-btn1").addEventListener("click", () => {
