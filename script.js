@@ -30,7 +30,8 @@ async function fetchPaths(startTitle) {
         const data = await response.json();
         console.log(data);
         // Display the response in the UI
-        document.getElementById("output1").textContent = `Paths: ${data.paths.join(", ")}`;
+        // document.getElementById("output1").textContent = `Paths: ${data.paths.join(", ")}`;
+        document.getElementById("output1").innerHTML = `Paths: <br> ${data.paths.map(path => path.join(", ")).join("<br>")}`;
     } catch (error) {
         console.error("Error fetching data:", error);
         document.getElementById("output1").textContent = "Error fetching data.";
