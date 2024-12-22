@@ -1,5 +1,5 @@
 async function fetchTitles(personId) {
-    const apiUrl = `https://<your-pythonanywhere-username>.pythonanywhere.com/titles/${personId}`;
+    const apiUrl = `https://chrishawnmiles.pythonanywhere.com/titles/${personId}`;
 
     try {
         const response = await fetch(apiUrl);
