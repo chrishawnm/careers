@@ -67,12 +67,12 @@ document.getElementById("fetch-btn0").addEventListener("click", () => {
 // Event listener for a button click
 document.getElementById("fetch-btn1").addEventListener("click", () => {
     const titleName = document.getElementById("title-id").value;
-    fetchPaths(titleName);
+    fetchCurrenTtitle(titleName);
 });
 
 // Event listener for a button click
 document.getElementById("fetch-btn2").addEventListener("click", () => {
     const personId = document.getElementById("path-follower-id").value;
-    fetchPaths(startTitle);
+    fetchpathfollowers(startTitle);
 });
 
